@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zinseszinsrechner</title>
     <link href='style.css' rel="stylesheet">
-
+    <script>src="Rechner.js"</script>
 </head>
 
 
@@ -14,7 +14,7 @@
 
 <header>
     <div class="header">
-    <h1>Zinseszins<span><a href="#rechner" class="growing-link">rechner</a></span></h1>
+    <h1>Zinseszins<span><a href="#" class="growing-link">rechner</a></span></h1>
         <div>
             <h3>
                 <a href ="#">login</a>
@@ -41,25 +41,23 @@
         <section>
             <form>
 
-                <label for="kapital">Kapital</label>
-                <input id="kapital" type="number" name="Zinseszinsrechner" value="5500">
+                <label for="kapital">Kapital:</label>
+                <input id="kapital" type="number" name="kapital" required value="5500">
                 <br>
-                <label for="laufzeit">Laufzeit</label>
-                <input id="laufzeit" type="number" name="Zinseszinsrechner" value="10">
+                <label for="laufzeit">Laufzeit:</label>
+                <input id="laufzeit" type="number" name="jahre" required value="10">
                 <br>
-                <label for="zinssatz">Zinssatz</label>
-                <input id="zinssatz" type="number" name="Zinseszinsrechner" value="7">
-
-                    <section>
-                        <form>
-                            <input type="submit" value="Berechnen">
-                        </form>
-                    </section>
+                <label for="zinsen">Zinssatz:</label>
+                <input id="zinsen" type="number" name="zinsen" required value="7">
 
                 <label for="endkapital">Endkapital</label>
                 <input id="endkapital" type="number" name="Zinseszinsrechner">
 
+
+                <button onclick="calculate()">Berechnen</button>
             </form>
+            <div id="output"></div>
+
         </section>
 
 
