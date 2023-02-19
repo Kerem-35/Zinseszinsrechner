@@ -1,0 +1,45 @@
+body{
+    background-color: antiquewhite;
+}
+
+.growing-link a {
+    text-decoration: none;
+    position: relative;
+}
+
+.growing-link a:hover::before {
+    bottom: 0;
+    height: 100%;
+}
+
+.growing-link a::before {
+    content: '';
+    background-color: hsla(196, 61%, 58%, .75);
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+    height: 8px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.rechnungsformular{
+    margin-left: 120px;
+    display: flex;
+
+}
+.header{
+    display: flex;
+    font-size: larger;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer{
+    margin-left: 16px}
+
